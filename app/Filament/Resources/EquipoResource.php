@@ -18,6 +18,7 @@ class EquipoResource extends Resource
     protected static ?string $model = Equipo::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationGroup = "Equipación";
 
     public static function form(Form $form): Form
     {

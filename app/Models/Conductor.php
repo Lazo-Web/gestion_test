@@ -3,8 +3,6 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Conductor extends Model
 {
@@ -18,7 +16,7 @@ class Conductor extends Model
         'cod_postal',
         'telefono',
         'permiso_conducir_fecha',
-        'targetatacografo_vencimiento',
+        'targeta_tacografo_vencimiento',
         'capacitacion_vencimiento',
         'fecha_nacimiento'
     ];

@@ -9,7 +9,7 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateConductor extends CreateRecord
 {
     protected static string $resource = ConductorResource::class;
-    
+
     protected function getRedirectUrl(): string
     {
         return $this->getResource()::getUrl('index');

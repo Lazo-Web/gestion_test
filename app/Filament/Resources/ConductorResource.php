@@ -24,36 +24,36 @@ class ConductorResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('nombre')
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('apellido')
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('dni')
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('direccion')
-                    ->maxLength(255)
-                    ->default(null),
-                Forms\Components\TextInput::make('ciudad')
-                    ->maxLength(255)
-                    ->default(null),
-                Forms\Components\TextInput::make('provincia')
-                    ->maxLength(255)
-                    ->default(null),
-                Forms\Components\TextInput::make('cod_postal')
-                    ->maxLength(255)
-                    ->default(null),
-                Forms\Components\TextInput::make('telefono')
-                    ->tel()
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\DatePicker::make('permiso_conducir_fecha'),
-                Forms\Components\DatePicker::make('targetatacografo_vencimiento')
-                    ->required(),
-                Forms\Components\DatePicker::make('capacitacion_vencimiento')
-                    ->required(),
-                Forms\Components\DatePicker::make('fecha_nacimiento'),
+                ->required()
+                ->maxLength(255),
+            Forms\Components\TextInput::make('apellido')
+                ->required()
+                ->maxLength(255),
+            Forms\Components\TextInput::make('dni')
+                ->required()
+                ->maxLength(255),
+            Forms\Components\TextInput::make('direccion')
+                ->maxLength(255)
+                ->default(null),
+            Forms\Components\TextInput::make('ciudad')
+                ->maxLength(255)
+                ->default(null),
+            Forms\Components\TextInput::make('provincia')
+                ->maxLength(255)
+                ->default(null),
+            Forms\Components\TextInput::make('cod_postal')
+                ->maxLength(255)
+                ->default(null),
+            Forms\Components\TextInput::make('telefono')
+                ->tel()
+                ->required()
+                ->maxLength(255),
+            Forms\Components\DatePicker::make('permiso_conducir_fecha'),
+            Forms\Components\DatePicker::make('targeta_tacografo_vencimiento'),
+
+            Forms\Components\DatePicker::make('capacitacion_vencimiento'),
+
+            Forms\Components\DatePicker::make('fecha_nacimiento'),
             ]);
     }
 

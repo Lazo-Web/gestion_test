@@ -22,9 +22,10 @@ return new class extends Migration
             $table->string('cod_postal')->nullable();
             $table->string('telefono');
             $table->date('permiso_conducir_fecha')->nullable();
-            $table->date('targeta_tacografo_vencimiento');
-            $table->date('capacitacion_vencimiento');
+            $table->date('targeta_tacografo_vencimiento')->nullable();
+            $table->date('capacitacion_vencimiento')->nullable();
             $table->date('fecha_nacimiento')->nullable();
+
             $table->timestamps();
         });
     }

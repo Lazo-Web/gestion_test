@@ -19,6 +19,7 @@ class TrailerResource extends Resource
     protected static ?string $model = Trailer::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationGroup = "Equipación";
     protected static ?string $modelLabel = 'Cisternas';
 
     public static function recalcularCapacidad(callable $set, $get): void
