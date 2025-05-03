@@ -52,4 +52,8 @@ php artisan migrate
 
 # Iniciar el servidor local
 php artisan serve
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la [MIT License](LICENSE). Puedes usarlo, modificarlo y distribuirlo libremente.
+
 
