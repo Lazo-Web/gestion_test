@@ -54,6 +54,6 @@ php artisan migrate
 php artisan serve
 ## 📄 Licencia
 
-Este proyecto está licenciado bajo la [MIT License](LICENSE). Puedes usarlo, modificarlo y distribuirlo libremente.
+Este proyecto está licenciado bajo la LICENSE. Puedes usarlo, modificarlo y distribuirlo libremente.
 
 
