@@ -56,6 +56,7 @@ class TractoraResource extends Resource
                 ->formatStateUsing(fn ($state) => ucwords(strtolower($state)))
                     ->searchable(),
                 Tables\Columns\TextColumn::make('vin')
+                ->formatStateUsing(fn ($state) => ucwords(strtolower($state)))
                     ->searchable(),
                 Tables\Columns\TextColumn::make('fecha_matricula')
                     ->date('d-m-Y')

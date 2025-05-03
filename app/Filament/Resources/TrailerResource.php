@@ -33,8 +33,8 @@ class TrailerResource extends Resource
 }
 
 
-   
-    
+
+
     public static function form(Form $form): Form
     {
         return $form
@@ -72,14 +72,14 @@ class TrailerResource extends Resource
 
                     ->default(null),
                 Forms\Components\TextInput::make('capacidad')
-                   
+
                     ->disabled()
                     ->dehydrated(true)
                    ->afterStateHydrated(fn (callable $set, $get) => self::recalcularCapacidad($set, $get)),
-                
+
             ]);
-          
-            
+
+
     }
 
     public static function table(Table $table): Table
@@ -87,10 +87,13 @@ class TrailerResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('matricula')
+                 ->formatStateUsing(fn ($state) => ucwords(strtoupper($state)))
                     ->searchable(),
                 Tables\Columns\TextColumn::make('marca')
+                 ->formatStateUsing(fn ($state) => ucwords(strtoupper($state)))
                     ->searchable(),
                 Tables\Columns\TextColumn::make('vin')
+                 ->formatStateUsing(fn ($state) => ucwords(strtoupper($state)))
                     ->searchable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('fecha_matricula')
