@@ -55,5 +55,5 @@ php artisan serve
 ## 📄 Licencia
 
 
-Este proyecto está licenciado bajo la [MIT License](LICENSE). Puedes usarlo, modificarlo y distribuirlo libremente.
+Este proyecto está licenciado bajo la [Licencia MIT](./LICENSE). Puedes usarlo, modificarlo y distribuirlo libremente.
 

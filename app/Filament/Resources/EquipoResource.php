@@ -17,7 +17,7 @@ class EquipoResource extends Resource
 {
     protected static ?string $model = Equipo::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-user-group';
     protected static ?string $navigationGroup = "Equipación";
 
     public static function form(Form $form): Form
@@ -63,10 +63,10 @@ class EquipoResource extends Resource
                     ->sortable(),
                 Tables\Columns\TextColumn::make('tractora.matricula')
                 ->formatStateUsing(fn ($state) => strtoupper($state))
-                    
+
                     ->sortable(),
                 Tables\Columns\TextColumn::make('trailer.matricula')
-               
+
                 ->formatStateUsing(fn ($state) => strtoupper($state))
                     ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
@@ -90,6 +90,7 @@ class EquipoResource extends Resource
                 ]),
             ]);
     }
+
 
     public static function getRelations(): array
     {

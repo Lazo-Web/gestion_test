@@ -17,7 +17,7 @@ class TractoraResource extends Resource
 {
     protected static ?string $model = Tractora::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-truck';
     protected static ?string $navigationGroup = "Equipación";
 
     public static function form(Form $form): Form
