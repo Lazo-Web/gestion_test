@@ -19,21 +19,21 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        LanguageSwitch::configureUsing(function (LanguageSwitch $switch) {
-            $switch
-                ->locales(['ar','en','fr', 'es']); // also accepts a closure
-        });
+        // LanguageSwitch::configureUsing(function (LanguageSwitch $switch) {
+        //     $switch
+        //         ->locales(['ar','en','fr', 'es']); // also accepts a closure
+        // });
 
 
-        LanguageSwitch::configureUsing(function (LanguageSwitch $switch) {
-            $switch
+        // LanguageSwitch::configureUsing(function (LanguageSwitch $switch) {
+        //     $switch
                 
-                ->outsidePanelRoutes([
-                    'profile',
-                    'home',
-                    // Additional custom routes where the switcher should be visible outside panels
-                ]);
-        });
+        //         ->outsidePanelRoutes([
+        //             'profile',
+        //             'home',
+        //             // Additional custom routes where the switcher should be visible outside panels
+        //         ]);
+        // });
     }
 
     
