@@ -25,15 +25,15 @@ class AppServiceProvider extends ServiceProvider
         });
 
 
-        // LanguageSwitch::configureUsing(function (LanguageSwitch $switch) {
-        //     $switch
+        LanguageSwitch::configureUsing(function (LanguageSwitch $switch) {
+            $switch
                 
-        //         ->outsidePanelRoutes([
-        //             'profile',
-        //             'home',
-        //             // Additional custom routes where the switcher should be visible outside panels
-        //         ]);
-        // });
+                ->outsidePanelRoutes([
+                    'profile',
+                    'home',
+                    // Additional custom routes where the switcher should be visible outside panels
+                ]);
+        });
     }
 
     
