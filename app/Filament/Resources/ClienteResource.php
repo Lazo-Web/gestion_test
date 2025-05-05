@@ -48,16 +48,16 @@ class ClienteResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('nombre')
-                ->formatStateUsing(fn (string $state): string => strtoupper($state))
+               ->formatStateUsing(fn ($state) => strtoupper($state))
                     ->searchable(),
                 Tables\Columns\TextColumn::make('direccion')
-                ->formatStateUsing(fn (string $state): string => strtoupper($state)),
+                ->formatStateUsing(fn ($state) => strtoupper($state)),
                 Tables\Columns\TextColumn::make('telefono')
-                ->formatStateUsing(fn (string $state): string => strtoupper($state)),
+                ->formatStateUsing(fn ($state) => strtoupper($state)),
 
                 Tables\Columns\TextColumn::make('tipo')
 
-                    ->formatStateUsing(fn (string $state): string => strtoupper($state)),
+                    ->formatStateUsing(fn ($state) => strtoupper($state))
             ])
             ->filters([
                 //

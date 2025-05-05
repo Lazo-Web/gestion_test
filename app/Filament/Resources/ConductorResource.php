@@ -64,28 +64,28 @@ class ConductorResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('nombre')
-                ->formatStateUsing(fn ($state) => ucwords(strtolower($state)))
+                ->formatStateUsing(fn ($state) => strtoupper($state))
                     ->searchable(),
                 Tables\Columns\TextColumn::make('apellido')
-                ->formatStateUsing(fn ($state) => ucwords(strtolower($state)))
+                ->formatStateUsing(fn ($state) => strtoupper($state))
                     ->searchable(),
                 Tables\Columns\TextColumn::make('dni')
                 ->formatStateUsing(fn ($state) => strtoupper($state))
                     ->searchable(),
                 Tables\Columns\TextColumn::make('direccion')
-                ->formatStateUsing(fn ($state) => ucwords(strtolower($state)))
+                ->formatStateUsing(fn ($state) => strtoupper($state))
                 ->toggleable(isToggledHiddenByDefault: true)
                     ->searchable(),
                 Tables\Columns\TextColumn::make('ciudad')
-                ->formatStateUsing(fn ($state) => ucwords(strtolower($state)))
+                ->formatStateUsing(fn ($state) => strtoupper($state))
                 ->toggleable(isToggledHiddenByDefault: true)
                     ->searchable(),
                 Tables\Columns\TextColumn::make('provincia')
-                ->formatStateUsing(fn ($state) => ucwords(strtolower($state)))
+                ->formatStateUsing(fn ($state) => strtoupper($state))
                 ->toggleable(isToggledHiddenByDefault: true)
                     ->searchable(),
                 Tables\Columns\TextColumn::make('cod_postal')
-                ->formatStateUsing(fn ($state) => ucwords(strtolower($state)))
+                ->formatStateUsing(fn ($state) => strtoupper($state))
                 ->toggleable(isToggledHiddenByDefault: true)
                     ->searchable(),
                 Tables\Columns\TextColumn::make('telefono')

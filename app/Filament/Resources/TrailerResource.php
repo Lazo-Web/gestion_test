@@ -87,13 +87,13 @@ class TrailerResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('matricula')
-                 ->formatStateUsing(fn ($state) => ucwords(strtoupper($state)))
+                ->formatStateUsing(fn ($state) => strtoupper($state))
                     ->searchable(),
                 Tables\Columns\TextColumn::make('marca')
-                 ->formatStateUsing(fn ($state) => ucwords(strtoupper($state)))
+                ->formatStateUsing(fn ($state) => strtoupper($state))
                     ->searchable(),
                 Tables\Columns\TextColumn::make('vin')
-                 ->formatStateUsing(fn ($state) => ucwords(strtoupper($state)))
+                ->formatStateUsing(fn ($state) => strtoupper($state))
                     ->searchable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('fecha_matricula')
