@@ -8,14 +8,14 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Fabrica extends Model
 {
-    protected $table = 'fabrica';
-    protected $primaryKey = 'id_fabrica';
-    public $timestamps = false;
+    
 
     protected $fillable = [
+        'id',
         'nombre',
         'direccion',
         'telefono',
+        'cliente_id',
     ];
 
     // Define any relationships or additional methods here
