@@ -27,6 +27,9 @@ class AdminPanelProvider extends PanelProvider
             ->id('panel')
             ->path('panel')
             ->login()
+            ->favicon(asset('images/milogo.jpg'))
+            ->registration()
+            ->brandName('Panel Admin')
             ->colors([
                 'primary' => Color::Amber,
             ])
