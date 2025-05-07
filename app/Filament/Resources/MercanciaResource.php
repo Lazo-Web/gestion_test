@@ -18,6 +18,7 @@ class MercanciaResource extends Resource
     protected static ?string $model = Mercancia::class;
 
     protected static ?string $navigationIcon = 'lucide-milk';
+    protected static ?string $navigationGroup = "Genero";
 
     public static function form(Form $form): Form
     {

@@ -23,11 +23,6 @@ class AppServiceProvider extends ServiceProvider
             $switch
                 ->displayLocale('es')
                 ->visible(outsidePanels: true)
-                ->outsidePanelRoutes([
-                    'profile',
-                    'home',
-                    // Additional custom routes where the switcher should be visible outside panels
-                ])
                 ->locales(['es']); // also accepts a closure
         });
 
