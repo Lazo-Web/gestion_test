@@ -32,7 +32,7 @@ class FabricaResource extends Resource
                     ->tel()
                     ->required(),
                 Forms\Components\Select::make('cliente_id')
-                    ->relationship('cliente', 'id'),
+                    ->relationship('cliente', 'nombre'),
             ]);
     }
 

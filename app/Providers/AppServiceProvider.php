@@ -22,8 +22,8 @@ class AppServiceProvider extends ServiceProvider
         LanguageSwitch::configureUsing(function (LanguageSwitch $switch) {
             $switch
                 ->displayLocale('es')
-                ->visible(outsidePanels: true)
-                ->locales(['es']); // also accepts a closure
+                ->locales(['es', 'en', 'fr'])
+                ->visible(outsidePanels: true); // also accepts a closure
         });
 
     }
